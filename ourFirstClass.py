@@ -2,8 +2,8 @@ class Item:
     def __init__(self, name: str, price: float, quantity=0):
         
         # We can create further restraints on the value created by instance by using the assert function
-        assert price >= 0, f"Your number {price} is not greater than 0"
-        assert quantity >= 0, f"Your number {quantity} is not greater than 0"
+        assert price >= 0, f"Price {price} is not greater than or equal to 0"
+        assert quantity >= 0, f"Quantity {quantity} is not greater than or equal to 0"
 
 
         self.name = name
